@@ -61,8 +61,30 @@ for (const element of ninjaTurtles){
 
 const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
-console.log()
+console.log(favMovies[8])
 
+//1.
+favMovies.sort()
+//2.
+favMovies.pop()
+//3.
+favMovies.push("Guardians of the Galaxy")
+//4.
+favMovies.reverse()
+//5.
+favMovies.shift()
+//6.
+favMovies.unshift()
+//7.
+favMovies.splice(14, 1, "Avatar")
+//8.-9.
+const secondHalf = favMovies.slice(9,18)
+console.log(secondHalf)
+//10.
+console.log(favMovies)
+//11.
+console.log(favMovies[13])
+//12. No?
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
@@ -74,10 +96,6 @@ const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
 whereIsWaldo.splice(1,1)
 whereIsWaldo[1][2] = "No One"
 console.log(whereIsWaldo[2][1][1])
-
-console.log(whereIsWaldo)
-
-
 
 ////////////////////////////////
 //  Excited Kitten
