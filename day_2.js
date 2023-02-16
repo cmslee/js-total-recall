@@ -51,8 +51,7 @@ wolfy[0] = "Gameboy"
 const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
 
 for (const element of ninjaTurtles){
-    element.toUpperCase
-    console.log(element)
+    console.log(element.toUpperCase())
 } 
 
 ////////////////////////////////
@@ -84,7 +83,7 @@ console.log(secondHalf)
 console.log(favMovies)
 //11.
 console.log(favMovies[13])
-//12. No?
+//12. No.
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
@@ -101,7 +100,37 @@ console.log(whereIsWaldo[2][1][1])
 //  Excited Kitten
 ////////////////////////////////
 
+//1. create array of strings for what the kitty randomly says
+const kittyTalk = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
+
+//2. set variable for randomized talk
+let meow = 0
+//3. create for loop to set range and incrementation based on "log 'love me, pet me! HSSSSSS!' 20 times" in instructions
+for (i=1; i<=20; i++){
+    //4. nest "if...else" statement to apply randomized output to condition of even numbers using modulo operator
+    if (i % 2 === 0) {
+        //5. re-assign to variable an expression for drawing values at random: use math methods random (to randomize) and floor (to make sure randomized result is an integer) and multiply by 3 (to match 3 values in array)
+        meow = Math.floor(Math.random()*3);
+        //6. ???
+        console.log(kittyTalk[meow])
+    //7. use else to log kitty excitement otherwise
+    } else {
+        console.log("Love me, pet me! HSSSSSS!")
+    }
+} 
 
 ////////////////////////////////
 //  Find the Median
 ////////////////////////////////
+
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+nums.forEach(i => i++)
+
+//step 1.access every item in array
+function findMedium (arr){
+    //step 2: add them to each other
+    nums.forEach(i)
+}
+// const medianNum = Math.floor(numsOrder.length/2)
+// console.log(medianNum)
