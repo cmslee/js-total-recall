@@ -21,7 +21,6 @@
 6. How much time should be spent thinking about how to solve a problem vs. actually typing in code? This is probably different depending on how different people think/work best, but, generally at least the same if not more time should be spent thinking about how to solve a problem than implementing since it likely saves time and energy for most to make sure their logic tracks before trying to define it in code.
 */
 
-/*
 
 // B. Strings
 
@@ -61,9 +60,9 @@ console.log(48 !== '48');
 
 var animal = "fox"
 if (animal === "fox") {
-	console.log("caw-shriek!");
+	// console.log("caw-shriek!");
 } else {
-	console.log("Hey! You're not a fox!");
+	// console.log("Hey! You're not a fox!");
 }
 
 // E. Driver's Ed
@@ -71,9 +70,9 @@ if (animal === "fox") {
 var yourAge = 21
 
 if (yourAge >= 16) {
-	console.log("Here are the keys!");
+	// console.log("Here are the keys!");
 } else if (yourAge < 16) {
-	console.log("Sorry, you're too young.")
+	// console.log("Sorry, you're too young.")
 }
 
 //_____________________________________________________________
@@ -127,7 +126,7 @@ for (let i = 0; i <= 10; i++) {
 	bank_account += i;
 }
 
-console.log(bank_account);
+// console.log(bank_account);
 
 
 //2.
@@ -135,7 +134,7 @@ for (let i = 0; i <= 100; i++) {
 	bank_account += (i * 2);
 }
 
-console.log(bank_account)
+// console.log(bank_account)
 
 
 //_____________________________________________________________
@@ -357,7 +356,6 @@ console.log(maxOfThree(6, 9, 1))
 
 // function printLongestWord (arr1) {
 // 	let longestWord = ''
-// 	//call out each element
 // 	array.forEach(str) ==> {
 // 		if (str.length > longestWord.length){
 // 			longestWord = str;
