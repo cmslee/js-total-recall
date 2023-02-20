@@ -150,12 +150,9 @@ function median(arr){
     if(arr.length % 2 === 1)
         //4ab. therefore, all you need to call is the array value positioned at the middleIndex
         return arr[Math.floor(middleIndex)]
-    //4b. however, if the array length (here arr.length) is even, that means there will be two numbers occuping the middle position in the list. the median in that case is the average of the two values positioned there.
+    //4b. however, if the array length (here arr.length) is even, that means there will be two numbers occupying the middle position in the list. the median in that case is the average of the two values positioned there.
     if(arr.length % 2 === 0)
         return (arr[middleIndex -1] + arr[middleIndex]/2)
 }
 
 console.log(median(nums))
-
-
-//more accurately, bc median in even number list is average of two numbers in the middle.

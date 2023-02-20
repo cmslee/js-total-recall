@@ -367,17 +367,22 @@ console.log(maxOfThree(6, 9, 1))
 // }
 
 
-function printLongestWord(array){
-	let longestWord = ''
-	array.forEach((str) => {
-		if (str.length > longestWord.length){
-			longestWord = str;
-		}
-	});
-	return longestWord
-}
+// function printLongestWord(array){
+// 	let longestWord = ''
+// 	array.forEach((str) => {
+// 		if (str.length > longestWord.length){
+// 			longestWord = str;
+// 		}
+// 	});
+// 	return longestWord
+// }
 
 // return Math.max([longestWord])
+
+function printLongestWord(arr){
+	let longestWord = ''
+	
+}
 
 console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 
