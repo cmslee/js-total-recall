@@ -118,4 +118,44 @@ for(i=0; i<2;i++){
 // console.log(hamster2)
 // console.log(person1)
 
+//***Chef Makes Dinners ***//
 
+class Dinner {
+  constructor(appetizer, entree, dessert) {
+    this.appetizer = appetizer,
+    this.entree = entree,
+    this.dessert = dessert
+  }
+}
+
+
+class Chef {
+  constructor(name) {
+    this.name = name;
+    this.skillLevel = 0
+    this.dinners = []
+  }
+
+  createDinner(dinner) {
+    this.dinners.push(dinner)
+    this.skillLevel++
+
+  }
+}
+
+const heartyOption = new Dinner('caesar salad', 'chicken parmigiana', 'belgium brownie')
+const liteOption = new Dinner('potato and leak soup', 'roasted salmon', 'rhubarb crumble')
+const kidsOption = new Dinner('baked potato', 'mac and cheese', 'ice cream sundae')
+
+const harry = new Chef("Harold")
+
+
+harry.createDinner(heartyOption)
+harry.createDinner(liteOption)
+harry.createDinner(kidsOption)
+
+console.log(harry)
+
+for(item of harry.dinners){
+  console.log(item)
+}
