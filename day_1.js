@@ -13,12 +13,12 @@
 // A. Q + A
 
 /*
-1. How to assign value to variable? // with assignment operator =
-2. How to change value of variable? // 
+1. How to assign value to variable? // with operator =
+2. How to change value of variable? // with assignment operators
 3. How to assign existing variable a new variable? // with assignment operator =
-4. Definitions of declare, assign, and define // declare: using keywords to introduce ____; assign: used to give value to a variable; define: for expressions?
-5. What is pseudocoding and why is it useful? // Expressing in plain English the steps that are happening. It is useful for making sure you know where your code is going and that it is fulfilling its intended function.
-6. How much time should be spent thinking about how to solve a problem vs. actually typing in code? This is probably different depending on how different people think/work best, but, generally at least the same if not more time should be spent thinking about how to solve a problem than implementing since it likely saves time and energy for most to make sure their logic tracks before trying to define it in code.
+4. Definitions of declare, assign, and define // declare: using keywords (such as var, let, const) to call into existance a variable or function; assign: to set variable to a value; define: to express what a value is
+5. What is pseudocoding and why is it useful? // Expressing in plain English the steps that are happening in a program. It is useful for making sure you know where your code is going and that it is fulfilling its intended function according to a logical flow.
+6. How much time should be spent thinking about how to solve a problem vs. actually typing in code? This is probably different depending on how different people think/work best as well as the difficult of the problem, but, generally...more time should be spent thinking about how to solve a problem than writing out the code for it since knowing how you will go about something will determine how go about coding. Outlining first to make sure the logic tracks and the steps are viably sized/portioned will likely save time and energy for most in the long run.
 */
 
 
@@ -145,9 +145,9 @@ for (let i = 0; i <= 100; i++) {
 // A. Talk about it:
 
 /*
-1. What are the things in an array called? // Values
-2. Do Arrays guarantee those things will be in order? // No.
-3. What real-life thing could you model with an array? // Datasets. Numbers on a bank statement. Titles in a DVD collection. Favorite thoughts.
+1. What are the things in an array called? // data
+2. Do Arrays guarantee those things will be in order? // they will and can be ordered according to the indexing system of the array
+3. What real-life thing could you model with an array? // Datasets. Numbers on a bank statement. Titles in a DVD collection. Favorite thoughts. Anything?
 */
 
 // B. Easy Does It
@@ -189,6 +189,7 @@ myArray.reverse();
 
 // F. Biggie Smalls
 
+/*
 var num = 100
 
 if (num < 100) {
@@ -208,7 +209,7 @@ if (num < 5) {
 } else {
 	console.log("monkey")
 }
-
+*/
 
 // H. What's in Your Closet?
 
@@ -243,6 +244,7 @@ const thomsCloset = [
 	]
 ];
 
+/*
 //1.
 console.log("Kristyn is rocking that " + kristynsCloset[2] + " today!")
 
@@ -268,7 +270,7 @@ console.log(`Thom is looking fierce in a ${thomsCloset[0][0]}, ${thomsCloset[1][
 //8.
 thomsCloset[1][2] = "Footie Pajamas" 
 console.log(thomsCloset)
-
+*/
 
 //_____________________________________________________________
 
@@ -281,6 +283,7 @@ console.log(thomsCloset)
 
 // IV. Functions
 
+/*
 // A. printGreeting
 
 function printGreeting(name) {
@@ -320,30 +323,30 @@ console.log(isVowel("g"));
 
 // E. getTwoLengths
 
-function getTwoLengths(string1, string2){
+function getTwoLengths(string1, string2) {
 	return [string1.length, string2.length]
 }
 
-console.log(getTwoLengths("Hank","Hippopotamus"));
+console.log(getTwoLengths("Hank", "Hippopotamus"));
 
 // F. getMultipleLengths
 
-function getMultipleLengths(arr){
+function getMultipleLengths(arr) {
 	let lengthArr = []
-	for(let i=0; i < arr.length; i++){
+	for (let i = 0; i < arr.length; i++) {
 		lengthArr.push(arr[i].length)
 	};
 	return lengthArr;
 }
 
-console.log(getMultipleLengths(["hello","what","is","up","dude"]))
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]))
 
 // G. getMaxThree
 
-function maxOfThree (num1, num2, num3){
-	if (num1 > num2 && num1 > num3){
+function maxOfThree(num1, num2, num3) {
+	if (num1 > num2 && num1 > num3) {
 		return num1;
-	} else if (num2 > num1 && num2 > num3){
+	} else if (num2 > num1 && num2 > num3) {
 		return num2;
 	} else {
 		return num3;
@@ -354,37 +357,18 @@ console.log(maxOfThree(6, 9, 1))
 
 // H. printLongestWord
 
-// function printLongestWord (arr1) {
-// 	let longestWord = ''
-// 	array.forEach(str) ==> {
-// 		if (str.length > longestWord.length){
-// 			longestWord = str;
-// 		}		
-// < arr1.length; i++){
-// 		longestWord.push(arr1[i].length)
-// 	}
-// 	return longestWord; 
-// }
-
-
-// function printLongestWord(array){
-// 	let longestWord = ''
-// 	array.forEach((str) => {
-// 		if (str.length > longestWord.length){
-// 			longestWord = str;
-// 		}
-// 	});
-// 	return longestWord
-// }
-
-// return Math.max([longestWord])
-
-function printLongestWord(arr){
+function printLongestWord(array) {
 	let longestWord = ''
-	
+	array.forEach((str) => {
+		if (str.length > longestWord.length) {
+			longestWord = str;
+		}
+	});
+	return longestWord
 }
 
 console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+*/
 
 //_____________________________________________________________
 
@@ -392,7 +376,7 @@ console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanut
 
 
 
-
+/*
 // V. Objects
 // A.
 
@@ -400,7 +384,7 @@ const user = {
 	name: "Sam",
 	email: "Sam314@themachine.org",
 	age: 25,
-	purchased: ["sandwich","black shirt","hair tie"]
+	purchased: ["sandwich", "black shirt", "hair tie"]
 }
 
 // B.
@@ -421,8 +405,9 @@ user.purchased.push("Merino jodhpurs")
 
 console.log(user.purchased[5])
 
-// E.
+// E. Object within Object
 
+//1.
 user.friend = {
 	name: "Samantha",
 	age: 25,
@@ -430,38 +415,45 @@ user.friend = {
 	purchased: []
 }
 
-console.log(user)
+//2.
 console.log(user.friend.name)
+//3.
 console.log(user.friend.location)
+//4.
 user.friend.age = 55
+//5.
 user.friend.purchased.push("The One Ring")
+//6.
 user.friend.purchased.push("A latte")
+//7.
 console.log(user.friend.purchased[1])
-// F.
 
-for(let i=0; i < user.purchased.length; i++){
+// F. Loops
+//1.
+for (let i = 0; i < user.purchased.length; i++) {
 	console.log(user.purchased[i]);
 }
-
-for(let i=0; i < user.friend.purchased.length; i++){
+//2.
+for (let i = 0; i < user.friend.purchased.length; i++) {
 	console.log(user.friend.purchased[i]);
 }
 
 // G.
 
-function updateUser (){
+function updateUser() {
 	user.age++;
 	user.name.toUpperCase();
 }
 
-function oldAndLoud (person){
-	person.age = person.age++;
-	person.name = person.name.toUpperCase();
-	}
+function oldAndLoud(person) {
+	person.age++;
+	person.name.toUpperCase();
+}
 
+//How would I call these functions?
 
 //_____________________________________________________________
-
+*/
 
 // Extra
 

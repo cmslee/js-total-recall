@@ -109,17 +109,18 @@ for(j=1; j<=20; j++){
 const kittyTalk = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
 
 //2. set variable for randomized talk
-
 let meow = 0
-//3. create for loop to set range and incrementation based on "log 'love me, pet me! HSSSSSS!' 20 times" in instructions
+
+//3. create for loop to set range and incrementation as per "log 'love me, pet me! HSSSSSS!' 20 times" in instructions
 for (i=1; i<=20; i++){
+    
     //4. nest "if...else" statement to apply randomized output to condition of even numbers using modulo operator
     if (i % 2 === 0) {
         //5. re-assign to variable an expression for drawing values at random: use math methods random (to randomize) and floor (to make sure randomized result is an integer) and multiply by 3 (to match 3 values in array)
         meow = Math.floor(Math.random()*3);
         //6. ???
         // console.log(kittyTalk[meow])
-    //7. use else to log kitty excitement otherwise
+    //7. use else to log kitty excitement otherwise - i.e. the passive default
     } else {
         // console.log("Love me, pet me! HSSSSSS!")
     }
@@ -133,11 +134,13 @@ for (i=1; i<=20; i++){
 
 const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
 
+/*this is my initial thought process thinking through median and JS -- please ignore --
 nums.sort(); // to put in order of smallest to largest
 console.log(nums) // check to make sure it worked
-medianIndex = Math.floor(0 + nums.length /2) // to figure out the position
+medianIndex = Math.floor(0 + nums.length /2) // to figure out the index position; Math.floor rather than Math.ceil will work in JS arrays bc index positions start at 0
 console.log(medianIndex); // to check the indexed position of the median
 console.log(nums[12]) // console log the index position to find the number
+*/
 
 //1. declare a function with variable named after what we are trying to find, in this case "median". set parameter as keyword "arr" so that function is not hard-coded to a particular array. **note to self**from now on, don't think of the array "nums", but any array.**end note**
 function median(arr){
@@ -155,4 +158,4 @@ function median(arr){
         return (arr[middleIndex -1] + arr[middleIndex]/2)
 }
 
-console.log(median(nums))
+// console.log(median(nums))
